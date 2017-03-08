@@ -1,0 +1,105 @@
+0
+!Awakining from your deep slumber you decide to take the path to the coast. You walk down the path of which felt most at comfort with as the oceans smell filled you with calm and peace as almost as if a piece of you was missing. The path divulges into two ways and you think of what to do. 
+-You see a camp down the cliff
+-You hear a screeching from up the cliff
+01
+!You come down into a little cave in the cliff side of the coast and see a used campfire with a bag left behind. Inside is a black pearl which looks rare and of importance. You are unsure if you should take it or not.
+-You take the pearl.:Pearl(1)
+-You leave it behind and go on 
+011
+The pearl burns upon touching it so you quickly shove it into your storage
+~H-1
+/03
+012
+/03
+02
+!You go up the cliff to see the nest of a Minokawa a dangerous bird like creature. You see a sword buried in the nest a wish to go for it but are unsure if its worth the risk.
+-You go for the sword.:Sword(1)
+-You decide to not risk it and go back down the cliff.
+021
+You rush for the sword and grab it but the creature takes a strike at you and hits your shoulder causing you to fall down the cliff and into the path again.
+~H-3
+~S+3
+/03
+022
+/01
+03
+!As you go down the path you come across a destroyed home along the coast you see smoke coming out of it as all your instincts scream to run. However as you turn you run into a Aesop a fish like creature which slowly creeps to you. You think on what to do.
+-Attack the creature
+-Reason with it
+-Run away from it
+031
+You see no other way out of this and charge at the beast hoping to lay waste to it.
+FIGHT:Enemy,10,10,2,0,0.9,0.1,
+0311
+~H=10
+~E=10
+After winning the fight you run past the creature and run ahead to the town ahead.
+/04
+032
+IF Pearl:You show him the pearl and he becomes hyponotized and you make your get away
+ELSE#The creature doesnt seem to understand and kills you regardless
+/04
+033
+You spirnt past the creature but it manages to hit you as you run
+~H-5
+/04
+04
+!After that brisk encounter you slowly walk towards a stone path and see an old town called Dragon Bridge. However everything is not as its seen as theres screams coming from far inside the village. As you get closer you realise the village is being raided by bandits. The situation is terrible as you see a bandit chasing after a family but also a quiet alley that you might be able to sneak past.
+-Risk your life by trying to save the family
+-Go across the alley and try to avoid the family
+-Go through the village and try to find a way around
+041
+!You decide to give into you're morale compass and go to save the family. You get close but notice a rifle on the ground which could take the man out quickly from a distance but if you miss the family dies
+-Grab the rifle
+-Charge the bandit
+0411
+#You dont want to get hurt so you attack from a distance but miss and the bandit kills the family and captures you and makes you a slave
+0412
+You charge the bandit pushing him away from the family and get ready to fight
+FIGHT:Enemy,10,10,1,0,0.9,0.1,
+04121
+~H=10
+~E=10
+After killing the bandit the family is grateful and agree to show you out of the village through a secret tunnel in their home and you make your way out of the tunnel
+/05
+042
+!You go the quiet path but you hear the scream of the family as they are butchered. You keep going along the path but notice a piece of gold necklace in an opening in a building but also you look ahead and see the opening to out of the town.
+-reach for the gold necklace in the opening.:Necklace(1)
+-dont risk it and rush for the exit
+0421
+You grab the necklace but fall into the opening and crush a bandit on your way down. The bandit was in the process of killing a person but you saved them and they vow to get you out of the village through a forest path that goes back onto the road.
+/05
+0422
+#You charge for the exit but trip and fall into a group of bandits hauling off treasure. They laugh and torture you slowly to death.
+043
+!You try to sneak through the village but accidentally bump into a bandit lookout. You manage to hold him down and cover his mouth preventing him calling his friends. You think about what to do.
+-Kill him
+-Negotiate
+0431
+IF Sword:You slice his throat and sneak your way past the other guards
+ELSE#You attempt to kill him with no weapon but he breaks your hold and pulls out a dagger stabbing you in the throat killing you instantly
+/05
+0432
+IF Pearl:You make a deal with the bandit that you'll give him the pearl for his silence, he agrees but the pearl burns brightly and starts to kill the lookout as he slowly burns to death and you make your way as the stench of burning flesh fills the air
+ELSE#You beg the lookout to let you go he agrees but as soon as you let him go he shouts and the others arrive putting you in chains.
+/05
+05
+!You walk away from the village looking back at all you left behind and think about the calamity you went through. You see a caravan ahead and go up to it. You are in desperation so you question what your next course of action is.
+-Attack the caravan
+-Talk to the caravan master
+-Walk past
+051
+#You charge at the caravan and are at the end of your rope but the caravan master blows a horn summoning a pack of guardsmen cutting you down and killing you as you look up and waste your final breath
+/05
+052
+!You walk up to the caravan guy and he seems down on his luck and is looking for wares to purchase
+-offer something
+-go on your way
+0521
+IF Necklace:You offer the gold necklace to the man and he gasps as its something which would help his collection and gives you a bag of gold in return which sets you off on your jounrey as a rich man upon a new world
+ELSE#The man enraged by your empty offer is offended and summons his guardsmen to arrest you and put you away.
+0522
+/053
+053
+You walk past the caravan man as you wish nothing ill to happen in your encounter and reckon its best to avoid him and so you head off into a new world in search of meaning for a life you once had.
