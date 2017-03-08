@@ -1,0 +1,71 @@
+0
+!Despite not knowing how you got here, you know you should get moving. The forest is no friendly place to be. What would you like to do?
+-You can see a nearby campsite to the North. It doesn't look too big and you can see some smoke. Perhaps there are people there that can help you?
+-You can hear a fast flowing river to the East.
+-Rest.
+01
+There's all sorts of supplies here, but you hear voices in the distance. Given that there are guns around you assume they're not friendly. You only have time to grab one thing:
+-Large drinking flask (empty).:Water(0/10)
+-Small coil of rope.:Rope(1)
+-Cooked meat.:Meat(5)
+/04
+04
+!You go back to where you woke up.
+-You can hear a fast flowing river to the East.
+-Rest.
+041
+/02
+042
+/03
+02
+!You emerge from the foliage to find that the river is nearly 40m wide with no easy place to cross in sight.
+-You follow the river downstream.
+-You climb up a tree to look for a way across.
+03
+~H+
+~E=10
+~I+Water(6/10)
+!After resting you realise that there was a water flask near where you first woke up and pick it up. You can hear voices coming from the campsite and gunfire. That probably isn't the best direction to go. You also notice a cave behind some vines.
+-You can hear a fast flowing river to the East.
+-Forage for food.
+-Explore the cave.
+031
+/02
+022
+IF Rope:You notice a lot of smoke... Something's not right. The camp had lots of weaponry but no game... Are they looking for you? You look around some more and notice a desert downstream, away from the flames. Perhaps you can escape from them there. 
+ELSE#In hindsight climbing a redwood tree without any gear was never going to end well...
+/021
+032
+There's no sign of any berries or animals. One of the people from the campsite finds you. Without warning he attacks you.
+FIGHT:Enemy,10,10,1,0,0.9,0.1,Pistol,
+0321
+~H=10
+~E=10
+~S=4
+After winning the fight you loot the body and discovered he had a loaded pistol with several shots. Obviously he didn't want to use it, you were lucky to have won. After a short rest to recover, you head towards the river.
+/02
+033
+!You enter the cave. Thankfully the ceiling has plenty of holes to allow light in. You come to a refuge area with plenty of space to walk around and stretch. The cave forks off but only one path is passable.
+-Explore further in.
+-Look around the refuge.
+-Leave
+0331
+#The cave starts descending and getting darker. You lose your footing and tumble a long way down. You shatter your legs and hit your head. You survive the fall but don't lose much blood. Crippled, you starve to death.
+0332
+~E-
+Much to your delight you notice a small stash containing a map, a dagger, and some leather armour. You can smell smoke and realise the imminent danger. You dart out of the cave and with no options left head towards the river. There is fire everywhere and you run further down river. You manage to escape.
+/021
+0333
+You can smell smoke and realise the imminent danger. You dart out of the cave and with no options left head towards the river. There is fire everywhere and you run further down river. You manage to escape.
+/021
+021
+!After a few hours of walking you begin to notice the forest ending and the river has thinned to a mere trickle.
+-Continue following the river.
+-Rest.
+0211
+!It's nearly dusk now, and you realise that the once flourishing scenery has changed to a barren landscape. Sand dunes line the horizon, you're about to enter a desert. The stream has ended.
+-Sleep overnight.
+-Continue into the desert.	 
+0212
+You discover an uprooted tree which could provide some shelter while you rest. 
+IF Water:You fill up your flask from the river.
