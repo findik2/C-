@@ -1,0 +1,14 @@
+DIR *dir;
+struct dirent *ent;
+if ((dir = opendir ("adventures")) != NULL) {
+    string pretext = "pick your file" ;
+    vector<string> options ;
+    while ((ent = readdir (dir)) != NULL)
+        options.push_back(ent->d_name) ;
+    int Choice = choice (pretext,options)
+    for(int i = 1; i < options.size()+1; i++)
+      if (Choice == i) fileStory.play("adventures/"+options.at(i-1));
+    closedir (dir);
+} else {
+   prompt("Failed to open directory");
+}
