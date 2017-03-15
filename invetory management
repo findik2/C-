@@ -1,0 +1,22 @@
+string human::getInventory() {
+	if (backpack.empty()) return "Nothing";
+	else {
+		string out;
+		for (auto &i : backpack) out += ", "+i;
+		return out.erase(0,1);
+	}
+}
+bool human::has(string item) {
+	for (auto &i : backpack)
+		if (i.find(item) == 0)
+			return true;
+	return false;
+}
+void human::add(string item) {
+	if (has(item) == false)
+		backpack.push_back(item);
+}
+void human::drop(string item) {
+	if(has(item)==true)
+		backpack.erase(remove(backpack.begin(), backpack.end(), item), backpack.end());
+}
