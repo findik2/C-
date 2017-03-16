@@ -1,0 +1,17 @@
+void showSettings() {
+	system("cls");
+	for (const auto &setting : settings) 
+		prompt(setting.first+" "+setting.second+"\n");
+	string name,value;
+	prompt("\nWrite 'exit' to return to the title screen.\nExample: 'sound on' to unmute.\n", false);
+	while (true) {
+		cin >> name;
+		if (getSetting(name) != "") {
+			cin >> value;
+			if (value != "") {
+				setSetting(name, value);
+				showSettings();
+			}else break;
+		}else break;
+	}
+}
