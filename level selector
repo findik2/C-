@@ -10,5 +10,5 @@ if ((dir = opendir ("adventures")) != NULL) {
       if (Choice == i) fileStory.play("adventures/"+options.at(i-1));
     closedir (dir);
 } else {
-   prompt("Failed to open directory");
+   prompt("Please enter a number with the specified range");
 }
